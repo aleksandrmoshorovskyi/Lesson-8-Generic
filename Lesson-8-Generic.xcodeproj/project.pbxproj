@@ -13,6 +13,7 @@
 		A8B5ED512BA375A3002886E6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A8B5ED502BA375A3002886E6 /* Base */; };
 		A8B5ED532BA375A5002886E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B5ED522BA375A5002886E6 /* Assets.xcassets */; };
 		A8B5ED562BA375A5002886E6 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A8B5ED552BA375A5002886E6 /* Base */; };
+		A8B5ED5E2BA37619002886E6 /* ContainerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B5ED5D2BA37619002886E6 /* ContainerModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A8B5ED522BA375A5002886E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B5ED552BA375A5002886E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8B5ED572BA375A5002886E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8B5ED5D2BA37619002886E6 /* ContainerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A8B5ED492BA375A3002886E6 /* AppDelegate.swift */,
 				A8B5ED4B2BA375A3002886E6 /* SceneDelegate.swift */,
 				A8B5ED4D2BA375A3002886E6 /* ViewController.swift */,
+				A8B5ED5D2BA37619002886E6 /* ContainerModels.swift */,
 				A8B5ED4F2BA375A3002886E6 /* Main.storyboard */,
 				A8B5ED522BA375A5002886E6 /* Assets.xcassets */,
 				A8B5ED542BA375A5002886E6 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				A8B5ED4E2BA375A3002886E6 /* ViewController.swift in Sources */,
 				A8B5ED4A2BA375A3002886E6 /* AppDelegate.swift in Sources */,
 				A8B5ED4C2BA375A3002886E6 /* SceneDelegate.swift in Sources */,
+				A8B5ED5E2BA37619002886E6 /* ContainerModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
