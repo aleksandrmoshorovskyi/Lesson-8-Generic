@@ -10,6 +10,9 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var myBtn: UIButton!
+    @IBOutlet weak var mySlider: UISlider!
+    
+    
     
     @IBAction func MyBtnClicked(_ sender: Any) {
  
@@ -32,7 +35,13 @@ class ViewController: UIViewController {
         responseInt.date = Date()
         
         debugPrint(" ... ")
+        
+        var doubleResponse = APIDoubleResponse()
+        doubleResponse.setup(with: [3.0, 5.0])
+        
+        debugPrint(" ... ")
     }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()

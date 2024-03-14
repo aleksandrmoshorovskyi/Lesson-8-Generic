@@ -44,3 +44,22 @@ struct APIUniversalResponse<T> {
         items = newItems
     }
 }
+
+
+protocol APIResponse {
+    
+    associatedtype Item
+    
+    mutating func setup(with newItems: [Item])
+}
+
+struct APIDoubleResponse: APIResponse {
+
+    var doubleValues: [Double] = []
+    
+    typealias Item = Double
+    
+    mutating func setup(with newItems: [Double]) {
+        self.doubleValues = newItems
+    }
+}
