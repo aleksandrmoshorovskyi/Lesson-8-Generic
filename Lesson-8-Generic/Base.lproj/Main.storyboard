@@ -16,34 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ5-3D-7U3">
-                                <rect key="frame" x="159" y="409" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rf-fm-Ux1">
+                                <rect key="frame" x="159" y="409" width="75" height="34.333333333333336"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button">
-                                    <backgroundConfiguration key="background" cornerRadius="4">
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="MyBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ap-NS-rFA"/>
+                                    <action selector="myBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f0r-rj-a5B"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GjK-T8-3J7">
-                                <rect key="frame" x="137" y="258" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </slider>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iDZ-Rx-vkJ">
-                                <rect key="frame" x="186" y="577" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="iDZ-Rx-vkJ">
+                                <rect key="frame" x="186.66666666666666" y="596" width="19.666666666666657" height="20"/>
                             </activityIndicatorView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="GjK-T8-3J7">
+                                <rect key="frame" x="133" y="246" width="127" height="31"/>
+                                <connections>
+                                    <action selector="mySliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Kr3-l0-6Vw"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GjK-T8-3J7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="AJf-rt-znW"/>
+                            <constraint firstItem="iDZ-Rx-vkJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JkL-SH-ZyA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iDZ-Rx-vkJ" secondAttribute="bottom" constant="202" id="NyJ-dA-VvC"/>
+                            <constraint firstItem="4rf-fm-Ux1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cye-Kg-JFD"/>
+                            <constraint firstItem="GjK-T8-3J7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="dZQ-x6-YYl"/>
+                            <constraint firstItem="GjK-T8-3J7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kTp-cs-g6p"/>
+                            <constraint firstItem="iDZ-Rx-vkJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186.66666666666666" id="uvc-2v-Ef9"/>
+                            <constraint firstItem="4rf-fm-Ux1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yB2-7x-reB"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="myBtn" destination="ZJ5-3D-7U3" id="1sy-ya-mB7"/>
+                        <outlet property="myActivityIndicator" destination="iDZ-Rx-vkJ" id="Anf-pO-5a6"/>
+                        <outlet property="myBtn" destination="4rf-fm-Ux1" id="Eeq-LE-kdr"/>
                         <outlet property="mySlider" destination="GjK-T8-3J7" id="0Py-XI-0g4"/>
                     </connections>
                 </viewController>
